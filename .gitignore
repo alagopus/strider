@@ -24,6 +24,7 @@ public/stylesheets/css/plugin-config-compiled.css
 public/stylesheets/css/plugin-status-compiled.css
 *compiled.css
 *compiled.js
+dist/
 
 # Dropped when npm encounters errors
 npm-debug.log
