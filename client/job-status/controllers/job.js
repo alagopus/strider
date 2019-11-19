@@ -69,6 +69,7 @@ module.exports = function ($scope, $route, $location, $filter) {
 
   function handleLocationChange(force) {
     if (global.location.pathname.match(/\/config$/)) {
+      // eslint-disable-next-line no-self-assign
       global.location = global.location;
       return;
     }
@@ -301,6 +302,7 @@ function buildSwitcher($scope) {
     }
     if (idx === -1) {
       console.log('Failed to find job.');
+      // eslint-disable-next-line no-self-assign
       return global.location = global.location;
     }
     idx += dy;

@@ -1,3 +1,4 @@
+/* eslint-disable no-control-regex */
 'use strict';
 
 var AU = require('ansi_up');
