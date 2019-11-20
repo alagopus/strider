@@ -4,7 +4,7 @@ var path = require('path');
 var passport = require('passport');
 var async = require('async');
 var Loader = require('strider-extension-loader');
-var globalTunnel = require('global-tunnel');
+var ProxyAgent = require('proxy-agent');
 
 var app = require('./lib/app');
 var common = require('./lib/common');
@@ -22,11 +22,6 @@ var Job = models.Job;
 var Config = models.Config;
 
 common.extensions = {};
-//
-// Use globa-tunnel to provide proxy support.
-// The http_proxy environment variable will be used if the first parameter to globalTunnel.initialize is null.
-//
-globalTunnel.initialize();
 
 module.exports = function (extdir, c, callback) {
   var appConfig = config;
@@ -48,6 +43,13 @@ module.exports = function (extdir, c, callback) {
 
   if (typeof Loader !== 'function') {
     throw new Error('Your version of strider-extension-loader is out of date');
+  }
+
+  if (process.env.http_proxy) {
+    // The http_proxy environment variable will be used to initialize a global proxy agent.
+    var proxyAgent = new ProxyAgent(process.env.http_proxy);
+    require('https').globalAgent = proxyAgent;
+    require('http').globalAgent = proxyAgent;
   }
 
   var loader = new Loader([path.join(__dirname, 'client/styles')], true);
