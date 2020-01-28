@@ -1,6 +1,6 @@
 {
   "name": "strider",
-  "version": "1.11.0",
+  "version": "2.0.2",
   "bin": {
     "strider": "bin/strider"
   },
@@ -15,8 +15,8 @@
     "deployment"
   ],
   "engines": {
-    "node": ">=4.2",
-    "npm": ">=2.0.0"
+    "node": ">=10.0",
+    "npm": ">=6.13.4"
   },
   "repository": {
     "type": "git",
@@ -134,8 +134,8 @@
     "winston": "^2.2.0"
   },
   "devDependencies": {
-    "angular": "1.7.8",
-    "angular-route": "1.7.8",
+    "angular": "1.5.7",
+    "angular-route": "1.5.7",
     "apidoc": "^0.17.1",
     "apidoc-markdown": "github:zambonilli/node-apidoc-markdown",
     "babel-preset-es2015": "^6.9.0",
@@ -145,7 +145,7 @@
     "browserify-shim": "^3.8.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "docpress": "0.7.6",
+    "docpress": "~0.8.0",
     "eslint": "^4.18.2",
     "expect.js": "^0.3.1",
     "git-update-ghpages": "^1.3.0",

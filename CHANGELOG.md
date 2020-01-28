@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/Strider-CD/strider/compare/v2.0.1...v2.0.2) (2020-01-11)
+
+
+
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/Strider-CD/strider/compare/v2.0.0...v2.0.1) (2020-01-10)
+
+
+### Bug Fixes
+
+* revert angular update ([f1dd473](https://github.com/Strider-CD/strider/commit/f1dd473))
+
+
+
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/Strider-CD/strider/compare/v1.11.0...v2.0.0) (2020-01-10)
+
+
+### Bug Fixes
+
+* add base tag, fixes [#1075](https://github.com/Strider-CD/strider/issues/1075) ([5ae473f](https://github.com/Strider-CD/strider/commit/5ae473f))
+* mongoose deprecations ([58d7840](https://github.com/Strider-CD/strider/commit/58d7840))
+* update engines ([61ce935](https://github.com/Strider-CD/strider/commit/61ce935))
+* update node to 10 on travis ([5013efb](https://github.com/Strider-CD/strider/commit/5013efb))
+* update simple-runner dep ([56cafbc](https://github.com/Strider-CD/strider/commit/56cafbc))
+
+
+### BREAKING CHANGES
+
+* drop node 6 and node 8, since both are EOL.
+
+
+
 <a name="1.11.0"></a>
 # [1.11.0](https://github.com/Strider-CD/strider/compare/v1.10.1...v1.11.0) (2018-08-10)
 
